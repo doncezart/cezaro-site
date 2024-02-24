@@ -12,10 +12,9 @@
             <button class="btn filled" type="button" onclick="window.location.href='https://t.me/goldieczr'"><i class="fa-brands fa-telegram icon"></i>goldieczr</button>
             <button class="btn filled" type="button" onclick="window.location.href='https://www.facebook.com/doncezarr/'"><i class="fa-brands fa-facebook-f icon"></i>doncezarr</button>
             <button class="btn filled" type="button" onclick="window.location.href='https://discordapp.com/users/462052434563563522'"><i class="fa-brands fa-discord icon"></i>doncezart</button>
-            <button class="btn filled" type="button" onclick="window.location.href='https://don-cezar.tumblr.com'"><i class="fa-brands fa-tumblr icon"></i>don-cezar</button>
             <button class="btn filled" type="button" onclick="window.location.href='https://steamcommunity.com/id/doncezar/'"><i class="fa-brands fa-steam icon"></i>doncezar</button>
             <button class="btn filled" type="button" onclick="window.location.href='https://github.com/doncezart'"><i class="fa-brands fa-github icon"></i>doncezart</button>
-            <button class="btn filled" type="button" onclick="window.location.href='https://www.snapchat.com/add/parfumulafemei'"><i class="fa-brands fa-snapchat icon"></i>parfumulafemei</button>
+            <button class="btn filled" type="button" onclick="window.location.href='https://fides-et-honor.tumblr.com'"><i class="fa-brands fa-tumblr icon"></i>fides-et-honor</button>
         </div>
     </div>
 

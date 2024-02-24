@@ -1,5 +1,5 @@
 .inside{
-    width: 30rem;        
+    width: 20rem;        
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
