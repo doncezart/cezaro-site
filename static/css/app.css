@@ -1,0 +1,65 @@
+.inside{
+    width: 30rem;        
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+    grid-gap: 2rem;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.title {
+    margin-bottom: -1rem;
+}
+
+body{
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 600; /* 200-700 */
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 600; /* 200-700 */
+    font-size: 1.75rem;
+    margin: 0;   
+}
+
+h3 {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500; /* 200-700 */
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500;
+    font-size: 1rem;
+    color: #767676;
+}
+
+.icon{
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.project {
+    border-radius: 1rem;
+    border: solid 0.1rem black;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

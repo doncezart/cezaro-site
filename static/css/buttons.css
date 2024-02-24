@@ -1,0 +1,36 @@
+.btn {
+    border-radius: 10rem;
+    padding: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    height: 2.1rem;
+    font-size: 1rem;
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.filled {
+    color: #FFFFFF;
+    background: #000000;
+    border: 0;
+}
+
+.filled:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #FFFFFF;
+    border: solid 0.1rem black;
+}
+
+.border {
+    color: #000000;
+    background: rgba(0,0,0,0);
+    border: solid 0.1rem black;
+}
+
+.border:hover {
+    background: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
