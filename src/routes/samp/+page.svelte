@@ -32,13 +32,13 @@
 
 <section id="images-wrapper" bind:this={gallery}> 
 {#each images as img}
-    <button class="poptoggle" popovertarget={img}><img src={img} alt='SAMP'></button>
+    <button class="poptoggle" popovertarget={img}><img loading="lazy" src={img} alt='SAMP'></button>
 {/each}
 </section>
 
 {#each images as img}
     <div popover class="container" id={img} use:toggle>
-        <img style="width: 100%" src={img} alt='SAMP'>
+        <img loading="lazy" style="width: 100%" src={img} alt='SAMP'>
     </div>
 {/each}
 
