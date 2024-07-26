@@ -35,15 +35,17 @@
 >
 
 {#each images as item (item.key)}
-    <div class="thumbnail">
-        <img src={item} loading="lazy" alt="SAMP"/>
-    </div>
+  <div class="item">
+      <div class="thumbnail">
+          <img src={item} loading="lazy" alt="SAMP"/>
+      </div>
+  </div>
 {/each}
 </MasonryInfiniteGrid>
 </div>
 
 <style>
-    .yes {
-      border: solid red;
-    }
+  .yes {
+    border: solid red;
+  }
 </style>
