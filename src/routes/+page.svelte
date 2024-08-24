@@ -1,7 +1,7 @@
 <div class="inside">
     <div class="personal">
         <h1 class="title">Ținiu Cezar Gabriel</h1>
-        <p>22 years old from Romania</p>
+        <br>
         <button class="btn border mail" style="width: 100%" type="button" onclick="window.location.href='mailto:tiniu@ceza.ro'"><i class="fa-solid fa-envelope icon"></i>tiniu@ceza.ro</button>
         <div class="buttons">
             <button class="btn filled" type="button" onclick="window.location.href='https://instagram.com/cezar.ique'"><i class="fa-brands fa-instagram icon"></i>cezar.ique</button>
