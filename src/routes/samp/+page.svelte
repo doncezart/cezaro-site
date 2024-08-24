@@ -1,6 +1,5 @@
 <script>
-  export let data;
-  var images = data.images
+  import images from '$lib/output.json';
   import { tick } from 'svelte'
   let gallery
   let initiator
@@ -23,16 +22,22 @@
       }
   }
 </script>
-<section id="images-wrapper" bind:this={gallery}> 
-{#each images as img}
-  <button class="poptoggle" popovertarget={img}><img src={img} alt='SAMP'></button>
+
+
+<section id="images-wrapper" bind:this={gallery}>
+{#each images as image}
+  <button class="poptoggle" popovertarget={image.SourceFile}>
+    <img src={image.SourceFile} alt="GTA San Andreas Multiplayer | SAMP Romania Roleplay" loading="lazy" width={image.ImageWidth} height={image.ImageHeight}/>
+  </button>
 {/each}
 </section>
-{#each images as img}
-  <div popover class="container" id={img} use:toggle>
-      <img style="width: 100%" src={img} alt='SAMP'>
-  </div>
+
+{#each images as image}
+<div popover class="container" id={image.SourceFile} use:toggle>
+    <img style="width: 100%" src={image.SourceFile} alt="GTA San Andreas Multiplayer | SAMP Romania Roleplay" loading="lazy"/>
+</div>
 {/each}
+
 <style>
 .container {
   border: 0;

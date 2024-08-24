@@ -22,7 +22,8 @@
 <MasonryInfiniteGrid
     class="container"
     gap={5}
-    column={5}
+    columnSize={300}
+    
 
     {items}
     on:requestAppend={({ detail: e }) => {
@@ -36,7 +37,7 @@
 {#each images as item (item.key)}
   <div class="item">
       <div class="thumbnail">
-          <img src={item} loading="lazy" alt="SAMP"/>
+          <img src={item} width=300 loading="lazy" alt="SAMP"/>
       </div>
   </div>
 {/each}
