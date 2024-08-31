@@ -9,7 +9,8 @@
 
 <style>
     .slot{
-        width: 90rem;
+        max-width: 90rem;
+        padding: 12px;
         margin-left: auto;
         margin-right: auto;
     }
