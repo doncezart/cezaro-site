@@ -18,7 +18,7 @@
                     <h2 class="profiletitle">{category}</h2>
                     <div class="profiles">
                         {#each socialmedia[category] as profile}
-                            <a href={profile.url}><SocialCard data={profile}/></a>
+                            <a href={profile.url} data-umami-event={profile.url}><SocialCard data={profile}/></a>
                         {/each}
                     </div>
                 {/each}
