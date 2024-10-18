@@ -1,85 +1,67 @@
+[
 {
-    "PERSONAL": [
-        {
-            "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg",
-            "name": "Cezar Gabriel",
-            "username": "@cezar.ique",
-            "url": "https://instagram.com/cezar.ique",
-            "platform": "INSTAGRAM"
-        },
-        {
-            "avatar": "https://p16-amd-va.tiktokcdn.com/tos-maliva-avt-0068/7334569674610966533~tplv-tiktokx-cropcenter-q:100:100:q75.jpeg?dr=10794&nonce=90459&ps=124&refresh_token=7782a95f7d736d7bbba2df8cc28ae555&s=AWEME_DETAIL&sc=avatar&shcp=1d1a97fc&shp=45126217&t=1",
-            "name": "Don Cezar",
-            "username": "@cezar.ique",
-            "url": "https://tiktok.com/@cezar.ique",
-            "platform": "TIKTOK"
-        },
-        {
-            "avatar": "https://yt3.googleusercontent.com/B9OOl1kQswvX7DfveUgUs2ncpeVl_AwlQlFwo2QWJSvfPIqvI98AQxNZB_xM8J8x6uExJKt0eA=s160-c-k-c0x00ffffff-no-rj",
-            "name": "Cezar Gabriel",
-            "username": "@graphic.design",
-            "url": "https://www.youtube.com/@graphic_design",
-            "platform": "YOUTUBE"
-        },
-        {
-            "avatar": "https://api.tumblr.com/v2/blog/fides-et-honor/avatar/512",
-            "name": "FIDES ET HONOR",
-            "username": "@fides-et-honor",
-            "url": "https://fides-et-honor.tumblr.com",
-            "platform": "TUMBLR"
-        },
-        {
-            "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg",
-            "name": "Cezar Gabriel",
-            "username": "@doncezarr",
-            "url": "https://www.facebook.com/doncezarr/",
-            "platform": "FACEBOOK"
-        }
-    ],
-    "BUSINESS": [
-        {
-            "avatar": "https://yt3.googleusercontent.com/rxCL1HmvavNBgJcodr3KLggck-gh1zQuuEWaPmdmumEQLLi6GydjLpShY0Tzf-NAOczSgfYz=s160-c-k-c0x00ffffff-no-rj",
-            "name": "DONCEZART",
-            "username": "@doncezart",
-            "url": "https://youtube.com/@doncezart",
-            "platform": "YOUTUBE"
-        },
-        {
-            "avatar": "https://i.imgur.com/yMDwaoV.png",
-            "name": "DONCEZART",
-            "username": "@doncezart",
-            "url": "https://instagram.com/doncezart",
-            "platform": "INSTAGRAM"
-        }
-    ],
-    "HOBBY": [
-        {
-            "avatar": "https://avatars.akamai.steamstatic.com/39f260bfecae622034076d9a1687b1388d2dbd62_full.jpg",
-            "name": "Don Cezar",
-            "username": "@doncezar",
-            "url": "https://steamcommunity.com/id/doncezar/",
-            "platform": "STEAM"
-        },
-        {
-            "avatar": "https://yt3.googleusercontent.com/x5yqYibAueH4iCc0vWVk--zzP8ZUVQzwBwvZ2weYXOpqVV8Ie6yDzI7TIYO3DdcwQAfYfYgxyk0=s160-c-k-c0x00ffffff-no-rj",
-            "name": "Don Cezar Archive",
-            "username": "@doncezararchive",
-            "url": "https://youtube.com/@doncezararchive",
-            "platform": "YOUTUBE"
-        },
-        {
-            "avatar": "https://api.tumblr.com/v2/blog/maskeddon/avatar/512",
-            "name": "Masked Don (18+)",
-            "username": "@maskeddon",
-            "url": "https://maskeddon.tumblr.com",
-            "platform": "TUMBLR"
-        },
-        {
-            "avatar": "https://yt3.googleusercontent.com/9Pxq5kcamhlZ8hr9bOdOWpOHukvubtxaqBFh7tlVydqMTCszx1s13S_89oXD_ztIYk8iz7vK=s160-c-k-c0x00ffffff-no-rj",
-            "name": "Don Faster",
-            "username": "@don.faster",
-            "url": "https://www.youtube.com/@don.faster",
-            "platform": "YOUTUBE"
-        }
-    ]
+    "title": "E-Mail",
+    "url": "mailto:tiniu@ceza.ro",
+    "type": "MAIL"
+},
+{
+    "title": "Instagram",
+    "url": "https://instagram.com/cezar.ique",
+    "type": "INSTAGRAM"
+},
+{
+    "title": "Youtube",
+    "url": "https://www.youtube.com/@graphic_design",
+    "type": "YOUTUBE"
+},
+{
+    "title": "TikTok",
+    "url": "https://www.tiktok.com/@cezar.ique",
+    "type": "TIKTOK"
+},
+{
+    "title": "Tumblr",
+    "url": "https://fides-et-honor.tumblr.com/",
+    "type": "TUMBLR"
+},
+{
+    "title": "Facebook",
+    "url": "https://www.facebook.com/doncezarr/",
+    "type": "FACEBOOK"
+},
+{
+    "title": "Steam",
+    "url": "https://steamcommunity.com/id/doncezar/",
+    "type": "STEAM"
+},
+{
+    "title": "GitHub",
+    "url": "https://github.com/doncezart/cezaro-site",
+    "type": "GITHUB"
+},
+{
+    "title": "Pinterest",
+    "url": "https://pinterest.com/goldieczr/",
+    "type": "PINTEREST"
+},
+{
+    "title": "Snapchat",
+    "url": "https://snapchat.com/add/parfumulafemei",
+    "type": "SNAPCHAT"
+},
+{
+    "title": "Discord",
+    "url": "x",
+    "type": "DISCORD"
+},
+{
+    "title": "Telegram",
+    "url": "https://t.me/doncezart",
+    "type": "TELEGRAM"
+},
+{
+    "title": "DONCEZART",
+    "url": "https://doncez.art",
+    "type": "DONCEZART"
 }
+]

@@ -1,0 +1,22 @@
+[
+{
+    "title": "Home",
+    "url": "/",
+    "type": "HOME"
+},
+{
+    "title": "Posts",
+    "url": "/posts",
+    "type": "POSTS"
+},
+{
+    "title": "Playlists",
+    "url": "/playlists",
+    "type": "PLAYLISTS"
+},
+{
+    "title": "Contact",
+    "url": "/contact",
+    "type": "CONTACT"
+}
+]

@@ -3,6 +3,8 @@
     import '../buttons.css'
     import '../app.css'
     import '../clash-display.css'
+    import NavBar from '$lib/components/NavBar.svelte'
+    import StatusBar from '$lib/components/StatusBar.svelte'
 </script>
 
 <svelte:head>
@@ -10,11 +12,11 @@
 </svelte:head>
 
 <div class="slot"><slot/></div>
+<NavBar/>
 
 <style>
     .slot{
-        max-width: 90rem;
-        padding: 12px;
+        
         margin-left: auto;
         margin-right: auto;
     }
