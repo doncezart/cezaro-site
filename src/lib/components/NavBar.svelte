@@ -15,19 +15,15 @@
 <style>
     .container{
         position: fixed;
-        bottom: 0;
+        bottom: 1rem;
         width: 100%;
     }
     .navlinks{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 0;
-
         border-radius: 16px;
-
         padding: 0;
-        
-        margin: 1rem;
         margin-left: 50%;
         transform: translateX(-50%);
     }
@@ -38,7 +34,7 @@
     }
     @media (max-width: 500px){
         .navlinks{
-            width: calc(100% - 16px)
+            width: calc(100% - 32px)
         }
     }
 </style>

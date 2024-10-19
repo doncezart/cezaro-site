@@ -18,7 +18,8 @@ a{
     .container{
         display: grid;
         grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
-        padding-left: 0.5rem
+        gap: 1rem;
+        padding: 1rem;
     }
 }
 @media (min-width: 501px){
