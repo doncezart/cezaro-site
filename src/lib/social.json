@@ -60,6 +60,11 @@
     "type": "TELEGRAM"
 },
 {
+    "title": "VSCO",
+    "url": "https://vsco.co/doncezart",
+    "type": "VSCO"
+},
+{
     "title": "DONCEZART",
     "url": "https://doncez.art",
     "type": "DONCEZART"

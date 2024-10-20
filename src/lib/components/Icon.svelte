@@ -12,6 +12,7 @@
     import Snapchat from 'virtual:icons/bxl/snapchat'
     import Discord from 'virtual:icons/bxl/discord-alt'
     import Telegram from 'virtual:icons/bxl/telegram'
+    import Vsco from 'virtual:icons/simple-icons/vsco'
     import Doncezart from 'virtual:icons/ri/box-1-line'
 </script>
 
@@ -52,6 +53,9 @@
     {#if data.type=="TELEGRAM"}<div class="bg telegram">
         <Telegram style="color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 75%; height: 75%; object-fit: cover;" />
     </div>{/if}
+    {#if data.type=="VSCO"}<div class="bg vsco">
+        <Vsco style="color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 75%; height: 75%; object-fit: cover;" />
+    </div>{/if}
     {#if data.type=="DONCEZART"}<div class="bg doncezart">
         <Doncezart style="color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 75%; height: 75%; object-fit: cover;" />
     </div>{/if}
@@ -71,6 +75,7 @@
 .snapchat {background: linear-gradient(135deg, #ffd900 0%, #ffc800 100%);}
 .discord {background: linear-gradient(135deg, #5865F2 0%, #404EED 100%);}
 .telegram {background: linear-gradient(135deg, #37aee2 0%, #1e96c8 100%);}
+.vsco {background: black}
 .doncezart {background: black}
 
 .container{
