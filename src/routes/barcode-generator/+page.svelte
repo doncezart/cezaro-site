@@ -121,6 +121,7 @@
         max-width: 30rem;
         margin-left: auto;
         margin-right: auto;
+        padding: 1rem;
     }
     .code{
         margin-left: auto;
