@@ -6,9 +6,7 @@
   const gap = 10;
   const defaultDirection = "end";
   const align = "masonry";
-  const column = 0;
-  const columnSize = 350;
-  const columnSizeRatio = 0;
+  const column = 3;
   let gallery
   let initiator
 
@@ -40,8 +38,6 @@
   {gap}
   {align}
   {column}
-  {columnSize}
-  {columnSizeRatio}
 >
 {#each images as image}
 <div class="item">
@@ -53,6 +49,7 @@
 </MasonryGrid>
 
 
+
 {#each images as image}
 <div popover class="container" id={image.SourceFile} use:toggle>
     <img src={image.SourceFile} alt="GTA San Andreas Multiplayer | SAMP Romania Roleplay" loading="lazy"/>
@@ -61,11 +58,11 @@
 
 <style>
 .container {
-  border: 0;
+  border: solid 1px red;
   padding: 0;
   line-height: 0;
+  width: 100%;
 }
-
 .container::backdrop {
   background-color: rgba(0,0,0,0.75);
 }

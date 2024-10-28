@@ -20,7 +20,7 @@ h1, h2, h3, p {
 
 .glass {
     background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,12 +35,6 @@ margin: 0;
 }
 
 body {
-    background-color: black;
-    background-image: url("$lib/wallpaper.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;

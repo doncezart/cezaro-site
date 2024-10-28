@@ -3,6 +3,14 @@
     import socialmedia from '$lib/social.json'
 </script>
 
+<svelte:head>
+  <style>
+    body {
+
+    }
+  </style>
+</svelte:head>
+
 <div class="container">
 {#each socialmedia as profile}
     <a href={profile.url} data-umami-event={profile.type}><Icon data={profile}/></a>
@@ -10,6 +18,39 @@
 </div>
 
 <style>
+:global(body) {
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media (max-width: 2560px){
+        background-image: url("$lib/wallpaper/2560.webp");
+    };
+    @media (max-width: 1920px){
+        background-image: url("$lib/wallpaper/1920.webp");
+    };
+    @media (max-width: 1536px){
+        background-image: url("$lib/wallpaper/1536.webp");
+    };
+    @media (max-width: 1280px){
+        background-image: url("$lib/wallpaper/1280.webp");
+    };
+    @media (max-width: 1024px){
+        background-image: url("$lib/wallpaper/1024.webp");
+    };
+    @media (max-width: 768px){
+        background-image: url("$lib/wallpaper/768.webp");
+    };
+    @media (max-width: 640px){
+        background-image: url("$lib/wallpaper/640.webp");
+    };
+
+
+
+
+
+
+}
 a{
     text-decoration: none;
     color: inherit;
