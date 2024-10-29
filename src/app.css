@@ -8,6 +8,7 @@
 h1, h2, h3, p {
     font-family: 'ClashDisplay-Variable';
     margin: 0;
+    line-height: 1;
 }
 
 .project {
@@ -16,6 +17,13 @@ h1, h2, h3, p {
     text-align: left;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+.w100 {
+    width: 100%
+}
+.hidden {
+    display: none
 }
 
 .glass {
