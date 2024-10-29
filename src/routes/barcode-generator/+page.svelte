@@ -95,15 +95,15 @@
         <option value="QR">QR Code</option>
     </select>
 
-    <div class="code">
-        <svg class:hidden={codeFormat === 'QR' || !codeInput} bind:this={barcodeElement}></svg>
-        <div class:hidden={codeFormat !== 'QR' || !codeInput} bind:this={qrCodeElement}></div>
-    </div>
-
     <button class="w100" on:click={downloadImage} disabled={!codeInput}>Download Image</button>
     <p class:hidden={codeFormat !== 'EAN13'}>Requirement: 12 or 13 numbers</p>
     <p class:hidden={codeFormat !== 'UPC'}>Requirement: 11 or 12 numbers</p>
     <p class:hidden={codeFormat !== 'CODE39'}>Requirement: Only uppercase letters (A-Z), digits (0-9), and some special characters</p>
+
+    <div class="code">
+      <svg class:hidden={codeFormat === 'QR' || !codeInput} bind:this={barcodeElement}></svg>
+      <div class:hidden={codeFormat !== 'QR' || !codeInput} bind:this={qrCodeElement}></div>
+    </div>
 </div>
 
 <style>
