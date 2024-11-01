@@ -7,7 +7,7 @@
 
     <div class="navlinks glass">
         {#each navlinks as navlink}
-        <a href={navlink.url} data-umami-event={navlink.type}><NavIcon data={navlink}/></a>
+        <a href={navlink.url} data-umami-event={navlink.type} aria-label={navlink.type}><NavIcon data={navlink}/></a>
         {/each}
     </div>
 </div>

@@ -4,11 +4,7 @@
 </script>
 
 <svelte:head>
-  <style>
-    body {
-
-    }
-  </style>
+    <title>Cezar Gabriel - Home</title>
 </svelte:head>
 
 <div class="container">
