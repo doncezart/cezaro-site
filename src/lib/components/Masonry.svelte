@@ -25,24 +25,42 @@
  class={`__grid--masonry ${stretchFirst ? '__stretch-first' : ''}`}
  style={`--grid-gap: ${gridGap}; --col-width: ${colWidth};`}
  >
-<slot></slot>
+{@render children?.()}
 </div>
 
 
 
 <script>
+  import { run } from 'svelte/legacy';
+
 import { onMount, onDestroy, getContext, setContext, tick } from 'svelte'
-export let  stretchFirst = false,
-        gridGap = '0.5em',
-        colWidth = 'minmax(Min(20em, 100%), 1fr)',
-        items = [] // pass in data if it's dynamically updated
-let grids = [], masonryElement
+let grids = [], masonryElement = $state()
 
 
-export let reset;
-$: if(reset) {
-masonryElement = masonryElement
-}
+  /**
+   * @typedef {Object} Props
+   * @property {boolean} [stretchFirst]
+   * @property {string} [gridGap]
+   * @property {string} [colWidth]
+   * @property {any} [items]
+   * @property {any} reset
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let {
+    stretchFirst = false,
+    gridGap = '0.5em',
+    colWidth = 'minmax(Min(20em, 100%), 1fr)',
+    items = [],
+    reset,
+    children
+  } = $props();
+run(() => {
+    if(reset) {
+  masonryElement = masonryElement
+  }
+  });
 
 
 export const refreshLayout = async () => {
@@ -112,13 +130,17 @@ _window.removeEventListener('resize', refreshLayout, false) /* on resize */
 })
 
 
-$: if(masonryElement) { 
-calcGrid([masonryElement])
-}
+run(() => {
+    if(masonryElement) { 
+  calcGrid([masonryElement])
+  }
+  });
 
-$: if(items) { // update if items are changed
-masonryElement = masonryElement // refresh masonryElement
-}
+run(() => {
+    if(items) { // update if items are changed
+  masonryElement = masonryElement // refresh masonryElement
+  }
+  });
 </script>
 
 <!-- 

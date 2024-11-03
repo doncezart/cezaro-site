@@ -4,7 +4,13 @@
     import '../app.css'
     import '../clash-display.css'
     import NavBar from '$lib/components/NavBar.svelte'
-    import StatusBar from '$lib/components/StatusBar.svelte'
+    /**
+     * @typedef {Object} Props
+     * @property {import('svelte').Snippet} [children]
+     */
+
+    /** @type {Props} */
+    let { children } = $props();
 </script>
 
 <svelte:head>
@@ -17,12 +23,11 @@
     <meta name="language" content="English">
 </svelte:head>
 
-<div class="slot"><slot/></div>
+<div class="slot">{@render children?.()}</div>
 <NavBar/>
 
 <style>
     .slot{
-        
         margin-left: auto;
         margin-right: auto;
     }

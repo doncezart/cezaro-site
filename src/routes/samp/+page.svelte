@@ -66,7 +66,7 @@
 .container::backdrop {
   background-color: rgba(0,0,0,0.75);
 }
-:global(body):has(:popover-open) button[popovertarget] {
+:global(body):has(:global(:popover-open)) button[popovertarget] {
   pointer-events: none;
 }
 img{

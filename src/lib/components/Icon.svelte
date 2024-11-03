@@ -1,5 +1,4 @@
 <script>
-    export let data
     import Instagram from 'virtual:icons/bxl/instagram'
     import Mail from 'virtual:icons/raphael/mail'
     import Youtube from 'virtual:icons/bxl/youtube'
@@ -14,6 +13,7 @@
     import Telegram from 'virtual:icons/bxl/telegram'
     import Vsco from 'virtual:icons/simple-icons/vsco'
     import Doncezart from 'virtual:icons/ri/box-1-line'
+    let { data } = $props();
 </script>
 
 <div class="container">

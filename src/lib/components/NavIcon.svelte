@@ -1,9 +1,9 @@
 <script>
-    export let data
     import Home from 'virtual:icons/material-symbols/other-houses-rounded'
     import Posts from 'virtual:icons/material-symbols/note-stack'
     import Playlists from 'virtual:icons/material-symbols/music-note-rounded'
     import Contact from 'virtual:icons/uim/comment-alt-message'
+    let { data } = $props();
 </script>
 
 <div class="container">

@@ -7,28 +7,15 @@
     <title>Cezar Gabriel - Home</title>
 </svelte:head>
 
-<div class="container">
-{#each socialmedia as profile}
-    <a href={profile.url} data-umami-event={profile.type}><Icon data={profile}/></a>
-{/each}
+<div style="background: url('/1920.webp') center center no-repeat; height: 100vh">
+    <div class="container">
+    {#each socialmedia as profile}
+        <a href={profile.url} data-umami-event={profile.type}><Icon data={profile}/></a>
+    {/each}
+    </div>
 </div>
 
 <style>
-:global(body) {
-    background-color: black;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    @media (min-width: 2560px){
-        background-image: url("$lib/wallpaper/3840.webp");
-    };
-    @media (max-width: 2560px){
-        background-image: url("$lib/wallpaper/2560.webp");
-    };
-    @media (max-width: 1921px){
-        background-image: url("$lib/wallpaper/1920.webp");
-    }
-}
 a{
     text-decoration: none;
     color: inherit;

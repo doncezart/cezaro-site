@@ -1,12 +1,14 @@
 <script>
+  import { run } from 'svelte/legacy';
+
     import { onMount } from 'svelte';
     import JsBarcode from 'jsbarcode';
     import QRCode from 'qrcode-svg';
 
-    let codeInput = '';
-    let codeFormat = 'CODE128';
-    let barcodeElement;
-    let qrCodeElement;
+    let codeInput = $state('');
+    let codeFormat = $state('CODE128');
+    let barcodeElement = $state();
+    let qrCodeElement = $state();
   
     function generateCode() {
       if (codeInput) {
@@ -72,7 +74,9 @@
         }
     }
   
-    $: if (codeInput || codeFormat) generateCode();
+    run(() => {
+    if (codeInput || codeFormat) generateCode();
+  });
   
     onMount(() => {generateCode();});
 </script>
@@ -82,34 +86,33 @@
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
 </svelte:head>
 
-<div class="container">
-    <h1>QR & Barcode Generator</h1>
+<div style="background: white center center no-repeat; height: 100vh">
+  <div class="container">
+      <h1>QR & Barcode Generator</h1>
 
-    <input class="w100" type="text" bind:value={codeInput} placeholder="Enter code data">
+      <input class="w100" type="text" bind:value={codeInput} placeholder="Enter code data">
 
-    <select class="w100" bind:value={codeFormat}>
-        <option value="CODE128">CODE128 (Most Common)</option>
-        <option value="CODE39">CODE39</option>
-        <option value="EAN13">EAN-13</option>
-        <option value="UPC">UPC</option>
-        <option value="QR">QR Code</option>
-    </select>
+      <select class="w100" bind:value={codeFormat}>
+          <option value="CODE128">CODE128 (Most Common)</option>
+          <option value="CODE39">CODE39</option>
+          <option value="EAN13">EAN-13</option>
+          <option value="UPC">UPC</option>
+          <option value="QR">QR Code</option>
+      </select>
 
-    <button class="w100" on:click={downloadImage} disabled={!codeInput}>Download Image</button>
-    <p class:hidden={codeFormat !== 'EAN13'}>Requirement: 12 or 13 numbers</p>
-    <p class:hidden={codeFormat !== 'UPC'}>Requirement: 11 or 12 numbers</p>
-    <p class:hidden={codeFormat !== 'CODE39'}>Requirement: Only uppercase letters (A-Z), digits (0-9), and some special characters</p>
+      <button class="w100" onclick={downloadImage} disabled={!codeInput}>Download Image</button>
+      <p class:hidden={codeFormat !== 'EAN13'}>Requirement: 12 or 13 numbers</p>
+      <p class:hidden={codeFormat !== 'UPC'}>Requirement: 11 or 12 numbers</p>
+      <p class:hidden={codeFormat !== 'CODE39'}>Requirement: Only uppercase letters (A-Z), digits (0-9), and some special characters</p>
 
-    <div class="code">
-      <svg class:hidden={codeFormat === 'QR' || !codeInput} bind:this={barcodeElement}></svg>
-      <div class:hidden={codeFormat !== 'QR' || !codeInput} bind:this={qrCodeElement}></div>
-    </div>
+      <div class="code">
+        <svg class:hidden={codeFormat === 'QR' || !codeInput} bind:this={barcodeElement}></svg>
+        <div class:hidden={codeFormat !== 'QR' || !codeInput} bind:this={qrCodeElement}></div>
+      </div>
+  </div>
 </div>
 
 <style>
-    :global(body) {
-        background-color: white;
-    }
     .container{
         max-width: 30rem;
         margin-left: auto;
