@@ -1,5 +1,4 @@
 <script>
-    import '@fortawesome/fontawesome-free/css/all.min.css'
     import '../buttons.css'
     import '../app.css'
     import '../clash-display.css'
