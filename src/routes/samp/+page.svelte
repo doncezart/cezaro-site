@@ -1,16 +1,8 @@
 <script>
   import images from '$lib/output.json';
-  import { tick } from 'svelte'
-  import { MasonryGrid } from "@egjs/svelte-grid";
 
-  const gap = 10;
-  const defaultDirection = "end";
-  const align = "masonry";
-  const column = 3;
   let gallery
   let initiator
-
-
 
   async function setGallery(e) {
       console.log(e)
@@ -32,23 +24,15 @@
   }
 </script>
 
-<MasonryGrid
-  class="container"
-  {defaultDirection}
-  {gap}
-  {align}
-  {column}
->
-{#each images as image}
-<div class="item">
-  <button class="poptoggle" popovertarget={image.SourceFile}>
-    <img src={image.SourceFile} alt="GTA San Andreas Multiplayer | SAMP Romania Roleplay" loading="lazy"/>
-  </button>
+<div class="masonry-with-columns">
+  {#each images as image}
+    <div class="item">
+      <button class="poptoggle" popovertarget={image.SourceFile}>
+        <img src={image.SourceFile} alt="x" loading="lazy"/>
+      </button>
+    </div>
+  {/each}
 </div>
-{/each}
-</MasonryGrid>
-
-
 
 {#each images as image}
 <div popover class="container" id={image.SourceFile} use:toggle>
@@ -57,21 +41,41 @@
 {/each}
 
 <style>
+.masonry-with-columns {
+  columns: 6 200px;
+  column-gap: 1rem;
+  margin: 1rem;
+}
+.masonry-with-columns div {
+  width: 150px;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: system-ui;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+img{
+  width: 100%;
+  height: 100%
+}
+
 .container {
-  border: solid 1px red;
+  border: none;
   padding: 0;
   line-height: 0;
-  width: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+  overflow: hidden;
 }
 .container::backdrop {
   background-color: rgba(0,0,0,0.75);
 }
 :global(body):has(:global(:popover-open)) button[popovertarget] {
   pointer-events: none;
-}
-img{
-  width: 350px;
-  height: auto
 }
 .poptoggle {
   border: none;
@@ -81,5 +85,4 @@ img{
   background: none;
   width: 100%;
 }
-
 </style>
